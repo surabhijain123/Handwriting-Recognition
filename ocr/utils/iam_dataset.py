@@ -166,6 +166,7 @@ class IAMDataset(dataset.ArrayDataset):
         elif self._parse_method == "word":
             self._data_urls = [url_partial.format(data_type="words", filename="words")]
         self._xml_url = "http://www.fki.inf.unibe.ch/DBs/iamDB/data/xml/xml.tgz"
+        credentials = ("surabhijain", "surabhi123")
 
         if credentials == None:
             if os.path.isfile(os.path.join(os.path.dirname(__file__), '..','..', 'credentials.json')):
