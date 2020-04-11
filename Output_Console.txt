@@ -1,0 +1,26 @@
+C:\Users\dell\anaconda3\envs\handwritten-text-recognition-for-apache-mxnet\python.exe E:/Word/Handwriting-Recognition/0_handwriting.py
+[22:30:10] c:\jenkins\workspace\mxnet-tag\mxnet\src\c_api\../operator/custom/custom-inl.h:55: New registration is overriding existing custom operator _smoothing_with_dim
+Downloading xml.tgz: 
+Completed: [----------------------------------------] 100%
+Downloading formsA-D.tgz: 
+Completed: [----------------------------------------] 100%
+Downloading formsE-H.tgz: 
+Completed: [----------------------------------------] 100%
+Downloading formsI-Z.tgz: 
+Completed: [----------------------------------------] 100%
+Processing data:
+Completed: [-----------------------------           ]  74%Traceback (most recent call last):
+  File "E:/Word/Handwriting-Recognition/0_handwriting.py", line 42, in <module>
+    test_ds = IAMDataset("form_original", train=False)
+  File "E:\Word\Handwriting-Recognition\ocr\utils\iam_dataset.py", line 207, in __init__
+    data = self._get_data()
+  File "E:\Word\Handwriting-Recognition\ocr\utils\iam_dataset.py", line 609, in _get_data
+    images_data = self._process_data()
+  File "E:\Word\Handwriting-Recognition\ocr\utils\iam_dataset.py", line 500, in _process_data
+    image_arr = self._pre_process_image(image_filename)
+  File "E:\Word\Handwriting-Recognition\ocr\utils\iam_dataset.py", line 296, in _pre_process_image
+    im = cv2.imread(img_in, cv2.IMREAD_GRAYSCALE)
+cv2.error: OpenCV(4.2.0) C:\projects\opencv-python\opencv\modules\core\src\alloc.cpp:73: error: (-4:Insufficient memory) Failed to allocate 8780618 bytes in function 'cv::OutOfMemoryError'
+
+
+Process finished with exit code 1
